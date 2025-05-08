@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tofias - Premium Tofu Products</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo-container">
+                <div class="logo">Tofias</div>
+                <div class="logo-tagline">Premium Quality</div>
+            </div>
+            <div class="nav-wrapper">
+                <ul class="nav-links">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="#products" class="nav-link">Products</a></li>
+                    <li><a href="#why-us" class="nav-link">Why Us</a></li>
+                    <li><a href="#delivery" class="nav-link">Delivery</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-actions">
+                    <div class="cart-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                        <span class="cart-count">0</span>
+                    </div>
+                    <a href="#products" class="order-now-btn">Order Now</a>
+                </div>
+            </div>
+            <button class="mobile-menu-btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <section id="hero" class="hero">
+            <div class="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-slide active">
+                        <div class="hero-content">
+                            <h1>Artisanal Tofias Delights</h1>
+                            <p>Handcrafted with premium ingredients for authentic flavors</p>
+                            <button class="cta-button">Explore Collection</button>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="hero-content">
+                            <h1>Fresh & Natural</h1>
+                            <p>Made daily with locally sourced ingredients</p>
+                            <button class="cta-button">Our Process</button>
+                        </div>
+                    </div>
+                    <div class="carousel-slide">
+                        <div class="hero-content">
+                            <h1>Premium Quality</h1>
+                            <p>Experience the finest tofu with oyster and milkfish</p>
+                            <button class="cta-button">Shop Now</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-indicators">
+                    <button class="indicator active"></button>
+                    <button class="indicator"></button>
+                    <button class="indicator"></button>
+                </div>
+            </div>
+        </section>
+
+        <section id="why-us" class="why-us">
+            <h2>Why Choose Tofias?</h2>
+            <div class="value-props">
+                <div class="value-prop">
+                    <i class="fas fa-leaf"></i>
+                    <h3>Locally Sourced</h3>
+                    <p>Fresh ingredients from trusted local farmers</p>
+                </div>
+                <div class="value-prop">
+                    <i class="fas fa-check-circle"></i>
+                    <h3>100% Natural</h3>
+                    <p>No preservatives, just pure goodness</p>
+                </div>
+                <div class="value-prop">
+                    <i class="fas fa-truck"></i>
+                    <h3>Fast Delivery</h3>
+                    <p>Same-day delivery in Metro Manila</p>
+                </div>
+                <div class="value-prop">
+                    <i class="fas fa-star"></i>
+                    <h3>Premium Quality</h3>
+                    <p>Affordable prices, exceptional taste</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="products" class="products">
+            <h2>Featured Products</h2>
+            <div class="product-grid">
+                <div class="product-card">
+                    <img src="img/tofu.jpg" alt="Tofu with Oyster" class="product-image">
+                    <h3>Tofu with Oyster</h3>
+                    <p>Premium tofu infused with fresh oyster essence</p>
+                    <span class="price">₱112.99</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card">
+                    <img src="img/bangus.jpg" alt="Tofu with Milkfish" class="product-image">
+                    <h3>Milkfish</h3>
+                    <p>Delicate Filipino Milkfish Dish known for its mild flavor and tender texture</p>
+                    <span class="price">₱116.99</span>
+                    <button class="add-to-cart">Add to Cart</button>
+                </div>
+            </div>
+
+            <!-- Product Process Modals -->
+            <div class="modal" id="tofuModal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <h2>Tofu with Oyster Process</h2>
+                    <div class="process-steps">
+                        <div class="step">
+                            <i class="fas fa-seedling"></i>
+                            <h3>1. Ingredient Selection</h3>
+                            <p>Carefully selected premium soybeans and fresh oysters from local suppliers</p>
+                        </div>
+                        <div class="step">
+                            <i class="fas fa-mortar-pestle"></i>
+                            <h3>2. Preparation</h3>
+                            <p>Soaking and grinding of soybeans, followed by oyster essence extraction</p>
+                        </div>
+                        <div class="step">
+                            <i class="fas fa-temperature-high"></i>
+                            <h3>3. Cooking Process</h3>
+                            <p>Slow cooking at precise temperatures to maintain flavor and texture</p>
+                        </div>
+                        <div class="step">
+                            <i class="fas fa-check-circle"></i>
+                            <h3>4. Quality Control</h3>
+                            <p>Rigorous testing for taste, texture, and freshness before packaging</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="modal" id="milkfishModal">
+                <div class="modal-content">
+                    <span class="close-modal">&times;</span>
+                    <h2>Milkfish Process</h2>
+                    <div class="process-steps">
+                        <div class="step">
+                            <i class="fas fa-fish"></i>
+                            <h3>1. Fish Selection</h3>
+                            <p>Fresh milkfish sourced from local fishermen, ensuring premium quality</p>
+                        </div>
+                        <div class="step">
+                            <i class="fas fa-cut"></i>
+                            <h3>2. Preparation</h3>
+                            <p>Expert cleaning and deboning process for perfect fillets</p>
+                        </div>
+                        <div class="step">
+                            <i class="fas fa-fire"></i>
+                            <h3>3. Cooking</h3>
+                            <p>Traditional cooking methods to preserve natural flavors</p>
+                        </div>
+                        <div class="step">
+                            <i class="fas fa-box"></i>
+                            <h3>4. Packaging</h3>
+                            <p>Vacuum-sealed packaging to maintain freshness and quality</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="testimonials" class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-grid">
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>The tofu is so soft and fresh! Best I've ever tasted.</p>
+                        <div class="testimonial-author">
+                            <img src="img/prime.jpg" alt="Prime Borres">
+                            <span>Prime Borres</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <div class="testimonial-content">
+                        <i class="fas fa-quote-left"></i>
+                        <p>I love how clean and fresh the milkfish tastes!</p>
+                        <div class="testimonial-author">
+                            <img src="img/jesf.jpg" alt="Jesril Albite">
+                            <span>Jesril Albite</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="delivery" class="delivery">
+            <h2>Delivery Information</h2>
+            <div class="delivery-info">
+                <div class="delivery-card">
+                    <i class="fas fa-calendar-alt"></i>
+                    <h3>Delivery Schedule</h3>
+                    <p>Monday to Saturday<br>9:00 AM - 8:00 PM</p>
+                </div>
+                <div class="delivery-card">
+                    <i class="fas fa-map-marker-alt"></i>
+                    <h3>Service Areas</h3>
+                    <p>Panabo City and nearby provinces<br>Free delivery for orders above ₱1,000</p>
+                </div>
+                <div class="delivery-card">
+                    <i class="fas fa-shopping-basket"></i>
+                    <h3>Minimum Order</h3>
+                    <p>₱500 minimum order<br>for delivery</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about" class="about">
+            <h2>About Us</h2>
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="images/team.jpg" alt="Our Team">
+                </div>
+                <div class="about-text">
+                    <h3>Our Story</h3>
+                    <p>Founded in 2025, Tofias Delights began with a simple mission: to bring the finest tofu products to Filipino tables. Our family-owned business combines traditional tofu-making techniques with modern innovation, ensuring each product meets our high standards of quality and taste.</p>
+                    <div class="trust-badges">
+                        <div class="badge">
+                            <i class="fas fa-award"></i>
+                            <span>Freshness Guarantee</span>
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-truck-fast"></i>
+                            <span>Fast Delivery</span>
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-lock"></i>
+                            <span>Secure Payment</span>
+                        </div>
+                        <div class="badge">
+                            <i class="fas fa-heart"></i>
+                            <span>Local Business</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="faq" class="faq">
+            <h2>Frequently Asked Questions</h2>
+            <div class="faq-container">
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Do you deliver outside of Panabo City?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>No, we deliver to all areas within Panabo City. We offer free delivery for orders above ₱1,000. For specific delivery inquiries, please contact us through our social media channels or call our hotline.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>How do I store the tofu?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>For optimal freshness, store our tofu in the refrigerator at temperatures between 2-4°C. Keep it in its original packaging or transfer to an airtight container with water. Consume within 3-5 days of purchase for the best quality and taste.</p>
+                    </div>
+                </div>
+                <div class="faq-item">
+                    <div class="faq-question">
+                        <h3>Is the milkfish already cleaned?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Yes, all our milkfish products are thoroughly cleaned, deboned, and prepared for your convenience. We ensure that each fish is properly cleaned and packaged to maintain its freshness and quality. You can cook it directly without additional cleaning.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="contact">
+            <h2>Get in Touch</h2>
+            <div class="contact-container">
+                <div class="contact-info">
+                    <div class="info-card">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <h3>Visit Us</h3>
+                        <p>123 Tofias<br>Panabo City, Davao del Norte<br>Philippines</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-phone-alt"></i>
+                        <h3>Call Us</h3>
+                        <p>Phone: (02) 8123-4567<br>Mobile: +63 912 345 6789</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-envelope"></i>
+                        <h3>Email Us</h3>
+                        <p>info@tofias.com<br>orders@tofias.com</p>
+                    </div>
+                    <div class="info-card">
+                        <i class="fas fa-clock"></i>
+                        <h3>Business Hours</h3>
+                        <p>Monday to Saturday<br>9:00 AM - 8:00 PM</p>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form">
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <select id="subject" name="subject" required>
+                                <option value="">Select a subject</option>
+                                <option value="order">Order Inquiry</option>
+                                <option value="delivery">Delivery Question</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="submit-btn">
+                            <i class="fas fa-paper-plane"></i>
+                            Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+            <div class="social-connect">
+                <h3>Connect With Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61575568994314" class="social-link facebook">
+                        <i class="fab fa-facebook-f"></i>
+                        <span>Facebook</span>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=61575568994314" class="social-link messenger">
+                        <i class="fab fa-facebook-messenger"></i>
+                        <span>Messenger</span>
+                    </a>
+                    <a href="#" class="social-link instagram">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                    <a href="#" class="social-link viber">
+                        <i class="fab fa-viber"></i>
+                        <span>Viber</span>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Tofias</h3>
+                <p>Premium tofu products for your table</p>
+                <div class="contact-info">
+                    <p><i class="fas fa-phone"></i> (02) 8123-4567</p>
+                    <p><i class="fas fa-envelope"></i> info@tofias.com</p>
+                    <p><i class="fab fa-facebook-messenger"></i> @Tofias</p>
+                </div>
+            </div>
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#products">Products</a></li>
+                    <li><a href="#delivery">Delivery Info</a></li>
+                    <li><a href="terms.html">Terms & Conditions</a></li>
+                    <li><a href="privacy.html">Privacy Policy</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/profile.php?id=61575568994314"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+                <div class="payment-methods">
+                    <i class="fab fa-cc-visa"></i>
+                    <i class="fab fa-cc-mastercard"></i>
+                    <i class="fab fa-cc-paypal"></i>
+                    <i class="fas fa-money-bill-wave"></i>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2025 Tofias. All rights reserved.</p>
+            <p>&copy; 2025 Developed by Prime Wisteria. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
